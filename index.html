@@ -1,199 +1,231 @@
-<!DOCTYPE html>
-<html lang="en">
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
-</head>
+body {
+    background: #f5f7fa;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Montserrat;
+}
 
-<body>
-    <!--main container-->
-    <div class="wrapper">
-        <aside class="sidebar">
-            <img class="photo-size" src="Photo.png" alt="My photo" />
-            <!--Contacts container-->
-            <div class="contacts-container">
-                <h3 class="contacts-title">Contacts</h3>
-                <div>
-                    <span class="contacts-link-type">C:</span>
-                    <a class="contacts.link" href="tel:+380976768353">+38 097 676 83 53</a>
-                </div>
+.wrapper {
+    background: #fff;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
 
-                <div>
-                    <span class="contacts-link-type">E:</span>
-                    <a class="contacts.link" href="mailto:zeoniss28@gmail.com">zeoniss28@gmail.com</a>
-                </div>
-            </div>
-            <!--Tech scills container-->
-            <div class="tech-scills-container">
-                <h3 class="tech-scills-title">Tech scills</h3>
-                <ul>
-                    <li class="tech-scills-item">
-                        <span class="tech-scills-text">HTML5</span>
-                    </li>
-                    <li class="tech-scills-item">
-                        <span class="tech-scills-text">CSS3</span>
-                    </li>
-                    <li class="tech-scills-item">
-                        <span class="tech-scills-text">GIT</span>
-                    </li>
-                    <li class="tech-scills-item">
-                        <span class="tech-scills-text">WebPack</span>
-                    </li>
-                    <li class="tech-scills-item">
-                        <span class="tech-scills-text">JavaScript</span>
-                    </li>
-                    <li class="tech-scills-item">
-                        <span class="tech-scills-text">React.js</span>
-                    </li>
-                    <li class="tech-scills-item">
-                        <span class="tech-scills-text">Node.js</span>
-                    </li>
-                </ul>
-            </div>
-            <!--Soft scills container-->
-            <div class="soft-scills-container">
-                <h3 class="soft-scills-title">Soft scills</h3>
-                <ul>
-                    <li class="soft-scills-item">
-                        <span class="soft-scills-text">Scrum</span>
-                    </li>
-                    <li class="soft-scills-item">
-                        <span class="soft-scills-text">Agile</span>
-                    </li>
-                    <li class="soft-scills-item">
-                        <span class="soft-scills-text">GTD</span>
-                    </li>
-                    <li class="soft-scills-item">
-                        <span class="soft-scills-text">Teamwork</span>
-                    </li>
-                </ul>
-            </div>
-        </aside>
+.sidebar {
+    background: #1e2939;
+    width: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 
-        <!--about me container-->
-        <div class="about-me-container">
-            <!--about me main info-->
-            <div class="info-container">
-                <h2 class="profesion">Front-end developer</h2>
-                <h1 class="my-name">Kriukov Vladimir</h1>
-                <p class="sentense">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-                </p>
-            </div>
-            <!--projects container-->
-            <div class="project-container">
-                <h3 class="about-me-title">Projects</h3>
+.photo-size {
+    width: 300px;
+    height: 400px;
+}
 
-                <ol>
-                    <li class="project-item">
-                        <a class="projects-link" href="https://lovecamp.allinsol.com/">https://lovecamp.allinsol.com/
-                        </a>
-                        <span class="dots">..........</span>
-                        <span> </span>
-                        <b>[</b> <span class="tech-name"> HTML5, CSS3</span>
-                        <b>]</b></span>
-                    </li>
-                    <li class="project-item">
-                        <a class="projects-link" href="https://cryptohub.goit.ua/">https://cryptohub.goit.ua/
-                        </a>
-                        <span class="dots">..................</span>
-                        <span>
-                            <b>[</b> <span class="tech-name">JavaScript</span> <b>]</b> </span>
-                    </li>
+.about-me-container {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
 
-                    <li class="project-item">
-                        <a class="projects-link" href="https://kidslike.goit.co.ua/">https://kidslike.goit.co.ua/
-                        </a>
-                        <span class="dots">.................</span>
-                        <span><b>[</b><span class="tech-name"> React.js, Node.js</span><b>]</b></span>
-                    </li>
-                </ol>
-            </div>
-            <!--Work experience-->
-            <div>
-                <h3 class="about-me-title">Work Experience</h3>
-                <!--company 1-->
-                <div>
-                    <h4 class="profesion-title">Plasma cnc <span class="profesion-company">operator</span></h4>
-                    <span class="profesion-time">January 2015 - up to now <span class>|</span> Ukraine</span>
-                    <ul class="profesion-duties">
-                        <li class="profesion-duties-item">
-                            The work of the CNC operator on modern equipment by the method of dry plasma cutting.
-                        </li>
-                        <li class="profesion-duties-item">
-                            Working with cutting, igniting, vortex gases.
-                        </li>
+.contacts-container {
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
 
-                        <li class="profesion-duties-item">
-                            Self-design cutting plan.
-                        </li>
+.contacts-title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
 
-                        <li class="profesion-duties-item">
-                            Control and maintenance of uninterrupted operation of filtering equipment and compressor equipment.
-                        </li>
+.contacts-link {
+    color: #5c6470;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
 
-                        <li class="profesion-duties-item">
-                            Maintaining cleanliness in the workplace
-                        </li>
+.contacts-link-type {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-right: 10px;
+}
 
-                        <li class="profesion-duties-item">sorting metal waste.</li>
-                        <li class="profesion-duties-item"> TIG welder duties.</li>
-                    </ul>
-                </div>
+.tech-scills-title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
 
-                <!--company 2-->
-                <div>
-                    <h4 class="profesion-title"><span class="profesion-company">Manager</span> Roga & Kopyta New</h4>
-                    <span class="profesion-time">March 2015 - October 2018 <spam class="profesion-divider">|</spam>
-                        Ukraine</span>
-                    <ul class="profesion-duties">
-                        <li class="profesion-duties-item">
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-                        </li>
+.tech-scills-container {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 55px;
+}
 
-                        <li class="profesion-duties-item">
-                            ipsum dolor sit amet, consectetur adipiscing elit. Risus commodo
-                        </li>
+.tech-scills-item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 15px;
+    color: #e68545;
+}
 
-                        <li class="profesion-duties-item">Risus commodo viverra maecenas.</li>
-                    </ul>
-                </div>
+.tech-scills-text {
+    color: #d8dadd;
+}
 
-                <!--company 3-->
-                <div>
-                    <h4 class="profesion-title"><span class="profesion-company">Manager</span> Roga & Kopyta LLC</h4>
-                    <span class="profesion-time">June 2014 - February 2015 <spam class="profesion-divider">|</spam>
-                        Ukraine</span>
-                    <ul class="profesion-duties">
-                        <li class="profesion-duties-item">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </li>
+.soft-scills-container {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 55px;
+}
 
-                        <li class="profesion-duties-item">
-                            iQuis ipsum suspendisse ultrices gravida.psum dolor sit amet, consectetur adipiscing elit. Risus commodo
-                        </li>
+.soft-scills-title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
 
-                        <li class="profesion-duties-item">Risus commodo viverra maecenas.</li>
-                    </ul>
-                </div>
-                <!--Education-->
-                <h3 class="about-me-title">Education</h3>
-                <div>
-                    <h3>
-                        <span class="profesion-company">Kharkiv National University of Radioelectronics</span>
-                    </h3>
-                    <br />
-                    <h3>Computer systems and networks</h3>
-                    <span class="education-time">September 2004 - June 2008 <span class="education-divider">|</span> Ukraine
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+.soft-scills-item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #e68545;
+    margin-left: 15px;
+}
 
-</html>
+.soft-scills-text {
+    color: #d8dadd;
+}
+
+.profesion {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.my-name {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 89px;
+}
+
+.sentense {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 24px;
+    width: 415px;
+}
+
+.info-container {
+    margin-bottom: 65px;
+}
+
+.about-me-title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.projects-link {
+    color: #595959;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.tech-name {
+    color: #595959;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.dots {
+    color: #bebebe;
+    font-weight: 100;
+}
+
+.project-item {
+    font-weight: 900;
+    margin-left: 17px;
+}
+
+.project-container {
+    margin-bottom: 55px;
+}
+
+.profesion-title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.profesion-company {
+    color: #ff6b08;
+}
+
+.profesion-time {
+    color: #a8a8a8;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.profesion-divider {
+    color: #000;
+}
+
+.profesion-duties {
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+.profesion-duties-item {
+    color: #595959;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.education-time {
+    color: #a8a8a8;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.education-divider {
+    color: #000;
+}
